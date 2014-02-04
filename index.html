@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Meta, title, CSS, favicons, etc. -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>Kristina puurib</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Documentation extras -->
+		<link href="css/docs.css" rel="stylesheet">
+		<link href="http://getbootstrap.com/docs-assets/css/pygments-manni.css" rel="stylesheet">
+		<!--[if lt IE 9]><script src="http://getbootstrap.com/docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+
+		<style>
+			img.img {
+				margin:10px 0;
+				padding:6px;
+				background:#eee;
+				border:1px solid #aaa;
+				box-shadow:0 0 12px #999
+			}
+		</style>
+	</head>
+	<body>
+
+		<!-- Docs master nav -->
+		<header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="" class="navbar-brand">Puu(p)uurija doktor Kristina Sohar</a>
+				</div>
+				<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active">
+							<a href="">Õpetus</a>
+						</li>
+						<li>
+							<a href="map.html">Kaart</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<!-- Docs page layout -->
+		<div class="bs-header" id="content">
+			<div class="container">
+				<h1>Puu(p)uurija puuritud puude punktide praktikum</h1>
+				<p>
+					Praktikumimaterjal <b>doktor Kristinale</b>, et tulevikus jõuaksid GPSi salvestatud puuritud puude punktid ilusti kaardile
+				</p>
+
+			</div>
+		</div>
+
+		<div class="container bs-docs-container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="bs-sidebar hidden-print" role="complementary">
+						<ul class="nav bs-sidenav">
+							<li>
+								<a href="#fieldwork">1. Tegutsemine välitööl</a>
+							</li>
+							<li>
+								<a href="#transfer">2. GPS punktid arvutisse</a>
+							</li>
+							<li>
+								<a href="#opengpx">3. GPX failide avamine QGISis</a>
+							</li>
+							<li>
+								<a href="#newshape">4. Loome uue shapefaili</a>
+							</li>
+							<li>
+								<a href="#copying">5. Kopeerime andmed</a>
+							</li>
+							<li>
+								<a href="#selection">6. Valime ainult olulised punktid</a>
+							</li>
+							<li>
+								<a href="#save">7. Salvestame valiku</a>
+							</li>
+							<li>
+								<a href="#map">8. Vaatame tulemust kaardil</a>
+							</li>
+							<li>
+								<a href="#download">9. Õpetuses kasutatud failid allalaadimiseks</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-9" role="main">
+
+					<div class="bs-docs-section">
+						<div class="page-header">
+							<h1 id="fieldwork">1. Tegutsemine välitööl</h1>
+						</div>
+						<p class="lead">
+							Uurimistöö jaoks ruumiandmete salvestamine kõrgtehnoloogilisi abivahendeid kasutades
+						</p>
+						<p>
+							Välitöödel puid puurides on oluline salvestada asukoht ja kellaaeg. Selleks sobib suurepäraselt globaalse positsioneerimissüsteemi vastuvõtja ehk geps.
+						</p>
+						<p>
+							Nagu doktor Kristina hiljuti tõestas, on ta omandanud peaaegu täielikult oskused karmides välitingimustes gepsu käsitleda ja puu-puurimiste asukohti seadmega salvestada.<br>
+							Olulise märkusena tuleb aga välja tuua, et punkti salvestamise äraunustamine mõjub teadustöö tõsiseltvõetavusele negatiivselt.
+						</p>
+
+					</div>
+
+					<div class="bs-docs-section">
+						<div class="page-header">
+							<h1 id="transfer">2. GPS punktid arvutisse</h1>
+						</div>
+						<p class="lead">
+							Selles peatükis vaatame, kuidas jõuavad punktid gepsust arvutisse
+						</p>
+						<p>
+							Kasutada on järgmised kõrgtehnoloogilised abivahendid:
+							<ul>
+								<li>geps</li>
+								<li>personaalarvuti</li>
+								<li>USB-kaabel</li>
+							</ul>
+							Toimi järgnevalt:
+							<ul>
+								<li>Lülita arvuti tööle, kui see veel ei tööta</li>
+								<li>Ühenda kaabel gepsu ja arvuti vahele</li>
+								<li>Kui geps küsib, kas sa soovid minna massilisse lattu (Mass Storage), siis vajuta kindlalt ja ühekordselt nupule jah (Yes)</li>
+								<li>Ava failihaldur<br>
+									<img class="img img-responsive" src="img/scr2.png">
+								</li>
+								<li>Liigu asukohta GARMIN/Garmin/GPX/<br>
+									<img class="img img-responsive" src="img/scr1.png">
+								</li>
+								<li>Vali kataloogist vajalikud failid (antud juhul siis <b>kristina_puurib1.gpx</b> ja <b>kristina_puurib2.gpx</b>) ja kopeeri need töölauale</li>
+								<li>Võid nüüd kaabli lahti ühendada</li>
+							</ul>
+						</p>
+						<!--
+						<div class="list-group bs-team">
+							<div class="list-group-item">
+								<iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=mdo&amp;type=follow"></iframe>
+								<a class="team-member" href="https://github.com/mdo"> <img src="http://www.gravatar.com/avatar/bc4ab438f7a4ce1c406aadc688427f2c" alt="@mdo"> <strong>Mark Otto</strong> <small>@mdo</small> </a>
+							</div>
+							<div class="list-group-item">
+								<iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=fat&amp;type=follow"></iframe>
+								<a class="team-member" href="https://github.com/fat"> <img src="http://www.gravatar.com/avatar/a98244cbdacaf1c0b55499466002f7a8" alt="@fat"> <strong>Jacob Thornton</strong> <small>@fat</small> </a>
+							</div>
+							<div class="list-group-item">
+								<iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=cvrebert&amp;type=follow"></iframe>
+								<a class="team-member" href="https://github.com/cvrebert"> <img src="http://www.gravatar.com/avatar/edec428c425453955f770095a7d26c50" alt="@cvrebert"> <strong>Chris Rebert</strong> <small>@cvrebert</small> </a>
+							</div>
+							<div class="list-group-item">
+								<iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=juthilo&amp;type=follow"></iframe>
+								<a class="team-member" href="https://github.com/juthilo"> <img src="http://www.gravatar.com/avatar/0f7dd3ce58a416be5685ea6194f82b11" alt="@juthilo"> <strong>Julian Thilo</strong> <small>@juthilo</small> </a>
+							</div>
+						</div>
+						-->
+					</div>
+
+					<div class="bs-docs-section">
+						<div class="page-header">
+							<h1 id="opengpx">3. GPX failide avamine QGISis</h1>
+						</div>
+						<p class="lead">
+							Avame GPX failid programmis QGIS
+						</p>
+						<ul>
+							<li>
+								Käivitame programmi QGIS<br>
+								<img class="img img-responsive" src="img/scr3.png">
+							</li>
+							<li>
+								Lisame seadmest kopeeritud GPX-failid kihtidena kaardile: Kiht -> Lisa vektorkiht<br>
+								<img class="img img-responsive" src="img/scr4.png">
+							</li>
+							<li>
+								Avanevas aknas vali nupp "Ava", määra failitüübiks "GPS eXchange Format...", vali Töölaualt mõlemad failid, vajuta "Open" ja veelkord "Open"
+							</li>
+							<li>
+								QGIS küsib millist kihti importida, vali mõlema faili puhul "waypoints" ja vajuta "OK"<br>
+								<img class="img img-responsive" src="img/scr5.png">
+							</li>
+						</ul>
+					</div>
+
+					<div class="bs-docs-section">
+						<div class="page-header">
+							<h1 id="newshape">4. Loome uue shapefaili</h1>
+						</div>
+						<p class="lead">
+							Loome uue tühja vektorkihi vajalike atribuutidega
+						</p>
+						<ul>
+							<li>
+								Vali menüüst Kiht -> Uus -> Uus Shapefaili kiht ...
+							</li>
+							<li>
+								Avanenud aknas määra tüübiks "Punkt", projektsiooniks EPSG:4326 - WGS 84, kustuta vaikimisi olev "id" atribuut,
+								lisa uued tekstitüüpi atribuudid "name", "type" ja "time". Vajuta "OK".<br>
+								Salvestusaknas sisesta failile nimi ("kristina_puurib") ja vajuta "Save"<br>
+								<img class="img img-responsive" src="img/scr7.png">
+							</li>
+						</ul>
+					</div>
+
+					<div class="bs-docs-section">
+						<div class="page-header">
+							<h1 id="copying">5. Kopeerime andmed</h1>
+						</div>
+						<p class="lead">
+							Kopeerime punktid kahest GPX failist uude shapefaili kokku
+						</p>
+						<ul>
+							<li>
+								Vali kihtide paneelist "kristina_puurib" kiht ja lülita sisse redigeerimisrežiim<br>
+								<img class="img img-responsive" src="img/scr8.png">
+							</li>
+							<li>
+								Vali kihtide paneelist esimene "waypoints" kiht ja vali "Vali nähtusi nelinurgaga" tööriist<br>
+								<img class="img img-responsive" src="img/scr9.png">
+							</li>
+							<li>
+								Tõmba hiirega kast üle kõikide punktide kaardil. Valitakse aktiivse kihi kõik punktid.
+							</li>
+							<li>
+								"Ctrl+C" kopeerib punktid lõikepuhvrisse.
+							</li>
+							<li>
+								Kihtide paneelil vali kiht "kristina_puurib" ja vajuta "Ctrl+V". Punktid kleebitakse uuele kihile.
+							</li>
+							<li>
+								Korda sama asja teise "waipoints" kihiga
+							</li>
+							<li>
+								Salvesta kihi muudatused<br>
+								<img class="img img-responsive" src="img/scr10.png">
+							</li>
+						</ul>
+					</div>
+
+					<div class="bs-docs-section">
+						<div class="page-header">
+							<h1 id="selection">6. Valime ainult olulised punktid</h1>
+						</div>
+						<p class="lead">
+							Teeme valiku punktidest atribuutandmete põhjal
+						</p>
+						<ul>
+							<li>
+								Vali kihtide paneelist "kristina_puurib" kiht ja ava päringuaken<br>
+								<img class="img img-responsive" src="img/scr11.png">
+							</li>
+							<li>
+								Valime ainult need punktid, mille atribuut "name" algab täheühendiga "TR".
+							</li>
+							<li>
+								Selleks sisestame päringuakna lahtrisse Lausend järgmise päringu: <b>name like 'TR%'</b>. Kinnitame päringu nupuga "Vali" ja "Sulge" sulgeb päringuakna
+							</li>
+							<li>
+								63 punkti on valitud
+							</li>
+						</ul>
+					</div>
+
+					<div class="bs-docs-section">
+						<div class="page-header">
+							<h1 id="save">7. Salvestame valiku</h1>
+						</div>
+						<p class="lead">
+							Salvestame valiku uue failina
+						</p>
+						<ul>
+							<li>
+								Kihtide paneelil kihi "kristina_puurib" peal tee paremklikk ja vali avanevas menüüs "Salvesta valik nimega..."
+							</li>
+							<li>
+								Avanevas aknas: Formaat "ESRI Shapefile", määra faili nimi nupust "Ava", nimeks näiteks "kristina_puurib_valik.shp"
+							</li>
+							<li>
+								Salvesta kiht vajutades nupule "OK". Ongi õiged punktid ühes failis koos :)
+							</li>
+							<li>
+								Ava failihaldur, liigu töölauale, vali töölaualt kõik failid, mille nimi on "kristina_puurib_valik", parema kliki menüüst vali "compress..." ja paki failid zip-arhiiviks
+							</li>
+						</ul>
+					</div>
+
+					<div class="bs-docs-section">
+						<div class="page-header">
+							<h1 id="map">8. Vaatame tulemust kaardil</h1>
+						</div>
+						<p class="lead">
+							Kaardil tulemuse nägemiseks toimi järgnevalt:
+						</p>
+						<ul>
+							<li>
+								<a href="map.html" target="_blank">Ava kaart</a>
+							</li>
+							<li>
+								Ava failihaldur, tiri töölaualt just loodud zip-fail kaardi peale. Ongi kõik.<br>
+								<img class="img img-responsive" src="img/scr12.png">
+							</li>
+						</ul>
+					</div>
+
+					<div class="bs-docs-section">
+						<div class="page-header">
+							<h1 id="download">9. Õpetuses kasutatud failid allalaadimiseks</h1>
+						</div>
+						<p class="lead">
+							Kasutatud failid allalaadimiseks:
+						</p>
+						<ul>
+							<li>
+								<a href="kristina_puurib_gpx.zip" target="_blank">Algandmed gpx-failidena</a>, zip-arhiivis failid, mis tulevad otse gepsust
+							</li>
+							<li>
+								<a href="kristina_puurib_valik.zip" target="_blank">Tulemus</a>, zip-arhiivis, selle faili võib kohe kaardile lohistada
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+		<footer class="bs-footer" role="contentinfo">
+			<div class="container">
+				<ul style="float:left; text-align:left">
+					<li><a href="http://qgis.org" target="_blank">qgis.org</a></li>
+					<li><a href="http://leafletjs.com/" target="_blank">leafletjs.com</a></li>
+					<li><a href="https://github.com/calvinmetcalf/shapefile-js" target="_blank">shapefile-js</a></li>
+					<li><a href="http://d3js.org" target="_blank">d3js.org</a></li>
+				</ul>
+				Kätlin Veber, Mihkel Oviir <a href="http://sookoll.ee" target="_blank">oo</a>
+
+			</div>
+		</footer>
+
+		<!-- JS and analytics only. -->
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
+
+		<script src="http://getbootstrap.com/docs-assets/js/holder.js"></script>
+
+		<script src="http://getbootstrap.com/docs-assets/js/application.js"></script>
+
+	</body>
+</html>
