@@ -1,4 +1,4 @@
-require(['catiline'], function(cw) {
+require([], function(cw) {
 	var worker = cw({
 		init : function(scope) {
 			importScripts('jam/require.js');
